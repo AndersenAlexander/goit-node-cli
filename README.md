@@ -48,19 +48,8 @@ npm install
 
 ## 📂 Project Structure
 
-goit-node-cli/
-├─ contacts.json       # Data storage (JSON)
-├─ contacts.js         # CRUD logic (list, get, add, remove)
-├─ index.js            # CLI entry point (commander)
-├─ server.js           # Web server + API + serves dashboard
-│
-├─ public/             # Frontend UI
-│  ├─ index.html
-│  └─ app.js
-│
-├─ screenshots/        # Screenshots for documentation (optional)
-├─ package.json
-└─ README.md
+
+<img width="730" height="331" alt="Screenshot 2025-08-24 235808" src="https://github.com/user-attachments/assets/df23f75f-62d7-4ae1-9560-a9e677acaf28" />
 
 
 
@@ -170,6 +159,7 @@ Change PORT inside server.js or stop the conflicting process.
 ## 📝 License
 MIT © 2025
 Built with Node.js + Express + Tailwind by Alexander Andersen
+
 
 
 
