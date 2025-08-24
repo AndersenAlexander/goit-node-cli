@@ -12,12 +12,17 @@ Additionally, the project includes a minimal **web dashboard** (built with Expre
 <img width="1645" height="874" alt="Contacts Dashboard by Alexander Andersen" src="https://github.com/user-attachments/assets/3927fd0b-1f45-45da-a678-ab8ae2f7878a" />
 
 
+
+
 ---
 
 ## 📦 Requirements
 - Node.js LTS (>= 18 recommended)
 - npm (comes with Node.js)
 - Git (for cloning the repository)
+
+
+
 
 ---
 
@@ -28,10 +33,16 @@ Additionally, the project includes a minimal **web dashboard** (built with Expre
 git clone https://github.com/<your-username>/goit-node-cli.git
 cd goit-node-cli
 
+
+
+
 ---
 
 # 2. Install dependencies
 npm install
+
+
+
 
 ---
 
@@ -51,11 +62,17 @@ goit-node-cli/
 ├─ package.json
 └─ README.md
 
+
+
+
 ---
 
 ## 🖥 CLI Usage
 Run from terminal:
 node index.js -a <action> [-i <id>] [-n <name>] [-e <email>] [-p <phone>]
+
+
+
 
 ---
 
@@ -71,6 +88,9 @@ node index.js -a add -n "Mango" -e "mango@gmail.com" -p "322-22-22"
 
 # Remove a contact by ID
 node index.js -a remove -i qdggE76Jtbfd9eWJHrssH
+
+
+
 
 ---
 
@@ -98,6 +118,10 @@ Delete contacts
 
 Export filtered contacts to CSV
 
+
+
+
+
 ---
 
 ## 📡 API Endpoints
@@ -111,12 +135,18 @@ Export filtered contacts to CSV
 
 
 
+
+
+
 ---
 
 ## 📸 Screenshots
 CLI Example (list)
 
 Web Dashboard
+
+
+
 
 
 ---
@@ -133,11 +163,14 @@ Change PORT inside server.js or stop the conflicting process.
 
 
 
+
+
 ---
 
 ## 📝 License
 MIT © 2025
 Built with Node.js + Express + Tailwind by Alexander Andersen
+
 
 
 
