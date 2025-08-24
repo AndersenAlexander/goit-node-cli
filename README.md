@@ -28,7 +28,7 @@ Additionally, the project includes a minimal **web dashboard** (built with Expre
 
 ## 🚀 Installation
 
-```bash
+
 # 1. Clone the repository
 git clone https://github.com/<your-username>/goit-node-cli.git
 cd goit-node-cli
@@ -170,6 +170,7 @@ Change PORT inside server.js or stop the conflicting process.
 ## 📝 License
 MIT © 2025
 Built with Node.js + Express + Tailwind by Alexander Andersen
+
 
 
 
