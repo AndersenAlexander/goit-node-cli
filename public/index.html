@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-image: url("./background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+    <!-- Favicon multiple sizes -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Alexander Andersen - Contacts Dashboard</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="text-gray-900"
+    style="background: url('./background.jpg') center/cover no-repeat"
+  >
+    <header class="max-w-5xl mx-auto py-8">
+      <h1 class="text-3xl font-bold text-black-600">Contacts Dashboard</h1>
+      <p class="text-sm text-black-500">
+        View, search, add, delete, and export your contacts.
+      </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto space-y-6 px-2 md:px-0">
+      <!-- Controls -->
+      <section
+        class="flex flex-col md:flex-row gap-3 justify-between items-start md:items-center"
+      >
+        <div class="flex items-center gap-2">
+          <input
+            id="search"
+            type="text"
+            placeholder="Search name/email/phone…"
+            class="border rounded-lg px-3 py-2 w-72"
+          />
+          <button
+            id="exportCsv"
+            class="border rounded-lg px-3 py-2 hover:bg-gray-100"
+          >
+            Export CSV
+          </button>
+        </div>
+        <div class="text-sm text-gray-500" id="status"></div>
+      </section>
+
+      <!-- Table -->
+      <section class="bg-white rounded-2xl shadow p-3 overflow-x-auto">
+        <table class="min-w-full text-sm" id="table">
+          <thead>
+            <tr class="border-b">
+              <th
+                data-key="name"
+                class="text-left py-2 px-3 cursor-pointer select-none"
+              >
+                Name
+              </th>
+              <th
+                data-key="email"
+                class="text-left py-2 px-3 cursor-pointer select-none"
+              >
+                Email
+              </th>
+              <th
+                data-key="phone"
+                class="text-left py-2 px-3 cursor-pointer select-none"
+              >
+                Phone
+              </th>
+              <th class="text-left py-2 px-3">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+
+      <!-- Add form -->
+      <section class="bg-white rounded-2xl shadow p-4">
+        <h2 class="text-lg font-semibold mb-3">Add Contact</h2>
+        <form id="addForm" class="grid grid-cols-1 md:grid-cols-4 gap-3">
+          <input
+            name="name"
+            required
+            placeholder="Name"
+            class="border rounded-lg px-3 py-2"
+          />
+          <input
+            name="email"
+            required
+            type="email"
+            placeholder="Email"
+            class="border rounded-lg px-3 py-2"
+          />
+          <input
+            name="phone"
+            required
+            placeholder="Phone"
+            class="border rounded-lg px-3 py-2"
+          />
+          <button
+            class="bg-black text-white rounded-lg px-4 py-2 hover:opacity-90"
+          >
+            Add
+          </button>
+        </form>
+        <p class="text-sm text-gray-500 mt-2">All fields are required.</p>
+      </section>
+    </main>
+
+    <footer class="max-w-5xl mx-auto py-8 text-xs text-black-700">
+      Built with Node.js + Express + Tailwind by
+      <a
+        href="https://andersenalexander.com"
+        target="_blank"
+        class="underline hover:text-blue-700"
+      >
+        Alexander Andersen
+      </a>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
